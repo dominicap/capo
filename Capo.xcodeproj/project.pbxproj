@@ -1,0 +1,1185 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6D9D94827EE5F9D00A9CFDF /* CapoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */; };
+		B6D9D94A27EE5F9D00A9CFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94927EE5F9D00A9CFDF /* ContentView.swift */; };
+		B6D9D94C27EE5F9E00A9CFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */; };
+		B6D9D94F27EE5F9E00A9CFDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D94E27EE5F9E00A9CFDF /* Preview Assets.xcassets */; };
+		B6D9D95927EE5F9E00A9CFDF /* CapoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D95827EE5F9E00A9CFDF /* CapoTests.swift */; };
+		B6D9D96327EE5F9E00A9CFDF /* CapoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D96227EE5F9E00A9CFDF /* CapoUITests.swift */; };
+		B6D9D96527EE5F9E00A9CFDF /* CapoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D96427EE5F9E00A9CFDF /* CapoUITestsLaunchTests.swift */; };
+		B6D9D96927EE5F9E00A9CFDF /* Capo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6D9D96827EE5F9E00A9CFDF /* Capo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6D9D96E27EE5F9F00A9CFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D96D27EE5F9F00A9CFDF /* Assets.xcassets */; };
+		B6D9D97427EE5F9F00A9CFDF /* Capo Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6D9D97327EE5F9F00A9CFDF /* Capo Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6D9D97927EE5F9F00A9CFDF /* CapoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D97827EE5F9F00A9CFDF /* CapoApp.swift */; };
+		B6D9D97B27EE5F9F00A9CFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D97A27EE5F9F00A9CFDF /* ContentView.swift */; };
+		B6D9D97D27EE5F9F00A9CFDF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D97C27EE5F9F00A9CFDF /* NotificationController.swift */; };
+		B6D9D97F27EE5F9F00A9CFDF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D97E27EE5F9F00A9CFDF /* NotificationView.swift */; };
+		B6D9D98127EE5F9F00A9CFDF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D98027EE5F9F00A9CFDF /* ComplicationController.swift */; };
+		B6D9D98327EE5F9F00A9CFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D98227EE5F9F00A9CFDF /* Assets.xcassets */; };
+		B6D9D98627EE5F9F00A9CFDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D98527EE5F9F00A9CFDF /* Preview Assets.xcassets */; };
+		B6D9D99227EE5F9F00A9CFDF /* CapoWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D99127EE5F9F00A9CFDF /* CapoWatchTests.swift */; };
+		B6D9D99C27EE5F9F00A9CFDF /* CapoWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D99B27EE5F9F00A9CFDF /* CapoWatchUITests.swift */; };
+		B6D9D99E27EE5F9F00A9CFDF /* CapoWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D99D27EE5F9F00A9CFDF /* CapoWatchUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D9D95527EE5F9E00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D94327EE5F9D00A9CFDF;
+			remoteInfo = capo;
+		};
+		B6D9D95F27EE5F9E00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D94327EE5F9D00A9CFDF;
+			remoteInfo = capo;
+		};
+		B6D9D96A27EE5F9E00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D96727EE5F9E00A9CFDF;
+			remoteInfo = "capo WatchKit App";
+		};
+		B6D9D97527EE5F9F00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D97227EE5F9F00A9CFDF;
+			remoteInfo = "capo WatchKit Extension";
+		};
+		B6D9D98E27EE5F9F00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D97227EE5F9F00A9CFDF;
+			remoteInfo = "capo WatchKit Extension";
+		};
+		B6D9D99827EE5F9F00A9CFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D9D96727EE5F9E00A9CFDF;
+			remoteInfo = "capo WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6D9D9A427EE5F9F00A9CFDF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6D9D97427EE5F9F00A9CFDF /* Capo Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D9A827EE5F9F00A9CFDF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B6D9D96927EE5F9E00A9CFDF /* Capo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B6D9D94427EE5F9D00A9CFDF /* Capo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoApp.swift; sourceTree = "<group>"; };
+		B6D9D94927EE5F9D00A9CFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D9D94E27EE5F9E00A9CFDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6D9D95427EE5F9E00A9CFDF /* Capo Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capo Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D95827EE5F9E00A9CFDF /* CapoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoTests.swift; sourceTree = "<group>"; };
+		B6D9D95E27EE5F9E00A9CFDF /* Capo UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capo UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D96227EE5F9E00A9CFDF /* CapoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoUITests.swift; sourceTree = "<group>"; };
+		B6D9D96427EE5F9E00A9CFDF /* CapoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6D9D96827EE5F9E00A9CFDF /* Capo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D96D27EE5F9F00A9CFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D9D97327EE5F9F00A9CFDF /* Capo Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Capo Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D97827EE5F9F00A9CFDF /* CapoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoApp.swift; sourceTree = "<group>"; };
+		B6D9D97A27EE5F9F00A9CFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B6D9D97C27EE5F9F00A9CFDF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B6D9D97E27EE5F9F00A9CFDF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B6D9D98027EE5F9F00A9CFDF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B6D9D98227EE5F9F00A9CFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D9D98527EE5F9F00A9CFDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6D9D98727EE5F9F00A9CFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D9D98827EE5F9F00A9CFDF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B6D9D98D27EE5F9F00A9CFDF /* Capo Watch Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capo Watch Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D99127EE5F9F00A9CFDF /* CapoWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoWatchTests.swift; sourceTree = "<group>"; };
+		B6D9D99727EE5F9F00A9CFDF /* Capo Watch UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capo Watch UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D99B27EE5F9F00A9CFDF /* CapoWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoWatchUITests.swift; sourceTree = "<group>"; };
+		B6D9D99D27EE5F9F00A9CFDF /* CapoWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D9D94127EE5F9D00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95127EE5F9E00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95B27EE5F9E00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D97027EE5F9F00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D98A27EE5F9F00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D99427EE5F9F00A9CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6CC42C027EEAF6600B60341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D94927EE5F9D00A9CFDF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6CC42C127EEAF7A00B60341 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D97A27EE5F9F00A9CFDF /* ContentView.swift */,
+				B6D9D97E27EE5F9F00A9CFDF /* NotificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6CC42C227EEAF8200B60341 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D97C27EE5F9F00A9CFDF /* NotificationController.swift */,
+				B6D9D98027EE5F9F00A9CFDF /* ComplicationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6D9D93B27EE5F9D00A9CFDF = {
+			isa = PBXGroup;
+			children = (
+				B6D9D94627EE5F9D00A9CFDF /* Capo */,
+				B6D9D95727EE5F9E00A9CFDF /* Capo Tests */,
+				B6D9D96127EE5F9E00A9CFDF /* Capo UITests */,
+				B6D9D96C27EE5F9E00A9CFDF /* Capo Watch */,
+				B6D9D97727EE5F9F00A9CFDF /* Capo Watch Extension */,
+				B6D9D99027EE5F9F00A9CFDF /* Capo Watch Tests */,
+				B6D9D99A27EE5F9F00A9CFDF /* Capo Watch UITests */,
+				B6D9D94527EE5F9D00A9CFDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D9D94527EE5F9D00A9CFDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D94427EE5F9D00A9CFDF /* Capo.app */,
+				B6D9D95427EE5F9E00A9CFDF /* Capo Tests.xctest */,
+				B6D9D95E27EE5F9E00A9CFDF /* Capo UITests.xctest */,
+				B6D9D96827EE5F9E00A9CFDF /* Capo.app */,
+				B6D9D97327EE5F9F00A9CFDF /* Capo Watch Extension.appex */,
+				B6D9D98D27EE5F9F00A9CFDF /* Capo Watch Tests.xctest */,
+				B6D9D99727EE5F9F00A9CFDF /* Capo Watch UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D9D94627EE5F9D00A9CFDF /* Capo */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC42C027EEAF6600B60341 /* View */,
+				B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */,
+				B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */,
+				B6D9D94D27EE5F9E00A9CFDF /* Preview Content */,
+			);
+			path = Capo;
+			sourceTree = "<group>";
+		};
+		B6D9D94D27EE5F9E00A9CFDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D94E27EE5F9E00A9CFDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6D9D95727EE5F9E00A9CFDF /* Capo Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D95827EE5F9E00A9CFDF /* CapoTests.swift */,
+			);
+			path = "Capo Tests";
+			sourceTree = "<group>";
+		};
+		B6D9D96127EE5F9E00A9CFDF /* Capo UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D96227EE5F9E00A9CFDF /* CapoUITests.swift */,
+				B6D9D96427EE5F9E00A9CFDF /* CapoUITestsLaunchTests.swift */,
+			);
+			path = "Capo UITests";
+			sourceTree = "<group>";
+		};
+		B6D9D96C27EE5F9E00A9CFDF /* Capo Watch */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D96D27EE5F9F00A9CFDF /* Assets.xcassets */,
+			);
+			path = "Capo Watch";
+			sourceTree = "<group>";
+		};
+		B6D9D97727EE5F9F00A9CFDF /* Capo Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC42C227EEAF8200B60341 /* Controller */,
+				B6CC42C127EEAF7A00B60341 /* View */,
+				B6D9D97827EE5F9F00A9CFDF /* CapoApp.swift */,
+				B6D9D98227EE5F9F00A9CFDF /* Assets.xcassets */,
+				B6D9D98727EE5F9F00A9CFDF /* Info.plist */,
+				B6D9D98827EE5F9F00A9CFDF /* PushNotificationPayload.apns */,
+				B6D9D98427EE5F9F00A9CFDF /* Preview Content */,
+			);
+			path = "Capo Watch Extension";
+			sourceTree = "<group>";
+		};
+		B6D9D98427EE5F9F00A9CFDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D98527EE5F9F00A9CFDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6D9D99027EE5F9F00A9CFDF /* Capo Watch Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D99127EE5F9F00A9CFDF /* CapoWatchTests.swift */,
+			);
+			path = "Capo Watch Tests";
+			sourceTree = "<group>";
+		};
+		B6D9D99A27EE5F9F00A9CFDF /* Capo Watch UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9D99B27EE5F9F00A9CFDF /* CapoWatchUITests.swift */,
+				B6D9D99D27EE5F9F00A9CFDF /* CapoWatchUITestsLaunchTests.swift */,
+			);
+			path = "Capo Watch UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D9D94327EE5F9D00A9CFDF /* Capo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9A927EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo" */;
+			buildPhases = (
+				B6D9D94027EE5F9D00A9CFDF /* Sources */,
+				B6D9D94127EE5F9D00A9CFDF /* Frameworks */,
+				B6D9D94227EE5F9D00A9CFDF /* Resources */,
+				B6D9D9A827EE5F9F00A9CFDF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D96B27EE5F9E00A9CFDF /* PBXTargetDependency */,
+			);
+			name = Capo;
+			productName = capo;
+			productReference = B6D9D94427EE5F9D00A9CFDF /* Capo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D9D95327EE5F9E00A9CFDF /* Capo Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9AC27EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Tests" */;
+			buildPhases = (
+				B6D9D95027EE5F9E00A9CFDF /* Sources */,
+				B6D9D95127EE5F9E00A9CFDF /* Frameworks */,
+				B6D9D95227EE5F9E00A9CFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D95627EE5F9E00A9CFDF /* PBXTargetDependency */,
+			);
+			name = "Capo Tests";
+			productName = capoTests;
+			productReference = B6D9D95427EE5F9E00A9CFDF /* Capo Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6D9D95D27EE5F9E00A9CFDF /* Capo UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9AF27EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo UITests" */;
+			buildPhases = (
+				B6D9D95A27EE5F9E00A9CFDF /* Sources */,
+				B6D9D95B27EE5F9E00A9CFDF /* Frameworks */,
+				B6D9D95C27EE5F9E00A9CFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D96027EE5F9E00A9CFDF /* PBXTargetDependency */,
+			);
+			name = "Capo UITests";
+			productName = capoUITests;
+			productReference = B6D9D95E27EE5F9E00A9CFDF /* Capo UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B6D9D96727EE5F9E00A9CFDF /* Capo Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9A527EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch" */;
+			buildPhases = (
+				B6D9D96627EE5F9E00A9CFDF /* Resources */,
+				B6D9D9A427EE5F9F00A9CFDF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D97627EE5F9F00A9CFDF /* PBXTargetDependency */,
+			);
+			name = "Capo Watch";
+			productName = "capo WatchKit App";
+			productReference = B6D9D96827EE5F9E00A9CFDF /* Capo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B6D9D97227EE5F9F00A9CFDF /* Capo Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9A127EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch Extension" */;
+			buildPhases = (
+				B6D9D96F27EE5F9F00A9CFDF /* Sources */,
+				B6D9D97027EE5F9F00A9CFDF /* Frameworks */,
+				B6D9D97127EE5F9F00A9CFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Capo Watch Extension";
+			productName = "capo WatchKit Extension";
+			productReference = B6D9D97327EE5F9F00A9CFDF /* Capo Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		B6D9D98C27EE5F9F00A9CFDF /* Capo Watch Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9B227EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch Tests" */;
+			buildPhases = (
+				B6D9D98927EE5F9F00A9CFDF /* Sources */,
+				B6D9D98A27EE5F9F00A9CFDF /* Frameworks */,
+				B6D9D98B27EE5F9F00A9CFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D98F27EE5F9F00A9CFDF /* PBXTargetDependency */,
+			);
+			name = "Capo Watch Tests";
+			productName = "capo WatchKit AppTests";
+			productReference = B6D9D98D27EE5F9F00A9CFDF /* Capo Watch Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6D9D99627EE5F9F00A9CFDF /* Capo Watch UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D9D9B527EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch UITests" */;
+			buildPhases = (
+				B6D9D99327EE5F9F00A9CFDF /* Sources */,
+				B6D9D99427EE5F9F00A9CFDF /* Frameworks */,
+				B6D9D99527EE5F9F00A9CFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D9D99927EE5F9F00A9CFDF /* PBXTargetDependency */,
+			);
+			name = "Capo Watch UITests";
+			productName = "capo WatchKit AppUITests";
+			productReference = B6D9D99727EE5F9F00A9CFDF /* Capo Watch UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D9D93C27EE5F9D00A9CFDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B6D9D94327EE5F9D00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					B6D9D95327EE5F9E00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B6D9D94327EE5F9D00A9CFDF;
+					};
+					B6D9D95D27EE5F9E00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B6D9D94327EE5F9D00A9CFDF;
+					};
+					B6D9D96727EE5F9E00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					B6D9D97227EE5F9F00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					B6D9D98C27EE5F9F00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B6D9D97227EE5F9F00A9CFDF;
+					};
+					B6D9D99627EE5F9F00A9CFDF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B6D9D96727EE5F9E00A9CFDF;
+					};
+				};
+			};
+			buildConfigurationList = B6D9D93F27EE5F9D00A9CFDF /* Build configuration list for PBXProject "Capo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D9D93B27EE5F9D00A9CFDF;
+			productRefGroup = B6D9D94527EE5F9D00A9CFDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D9D94327EE5F9D00A9CFDF /* Capo */,
+				B6D9D95327EE5F9E00A9CFDF /* Capo Tests */,
+				B6D9D95D27EE5F9E00A9CFDF /* Capo UITests */,
+				B6D9D96727EE5F9E00A9CFDF /* Capo Watch */,
+				B6D9D97227EE5F9F00A9CFDF /* Capo Watch Extension */,
+				B6D9D98C27EE5F9F00A9CFDF /* Capo Watch Tests */,
+				B6D9D99627EE5F9F00A9CFDF /* Capo Watch UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D9D94227EE5F9D00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D94F27EE5F9E00A9CFDF /* Preview Assets.xcassets in Resources */,
+				B6D9D94C27EE5F9E00A9CFDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95227EE5F9E00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95C27EE5F9E00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D96627EE5F9E00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D96E27EE5F9F00A9CFDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D97127EE5F9F00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D98627EE5F9F00A9CFDF /* Preview Assets.xcassets in Resources */,
+				B6D9D98327EE5F9F00A9CFDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D98B27EE5F9F00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D99527EE5F9F00A9CFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D9D94027EE5F9D00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D94A27EE5F9D00A9CFDF /* ContentView.swift in Sources */,
+				B6D9D94827EE5F9D00A9CFDF /* CapoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95027EE5F9E00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D95927EE5F9E00A9CFDF /* CapoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D95A27EE5F9E00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D96327EE5F9E00A9CFDF /* CapoUITests.swift in Sources */,
+				B6D9D96527EE5F9E00A9CFDF /* CapoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D96F27EE5F9F00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D97D27EE5F9F00A9CFDF /* NotificationController.swift in Sources */,
+				B6D9D97B27EE5F9F00A9CFDF /* ContentView.swift in Sources */,
+				B6D9D98127EE5F9F00A9CFDF /* ComplicationController.swift in Sources */,
+				B6D9D97927EE5F9F00A9CFDF /* CapoApp.swift in Sources */,
+				B6D9D97F27EE5F9F00A9CFDF /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D98927EE5F9F00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D99227EE5F9F00A9CFDF /* CapoWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D9D99327EE5F9F00A9CFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9D99E27EE5F9F00A9CFDF /* CapoWatchUITestsLaunchTests.swift in Sources */,
+				B6D9D99C27EE5F9F00A9CFDF /* CapoWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D9D95627EE5F9E00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D94327EE5F9D00A9CFDF /* Capo */;
+			targetProxy = B6D9D95527EE5F9E00A9CFDF /* PBXContainerItemProxy */;
+		};
+		B6D9D96027EE5F9E00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D94327EE5F9D00A9CFDF /* Capo */;
+			targetProxy = B6D9D95F27EE5F9E00A9CFDF /* PBXContainerItemProxy */;
+		};
+		B6D9D96B27EE5F9E00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D96727EE5F9E00A9CFDF /* Capo Watch */;
+			targetProxy = B6D9D96A27EE5F9E00A9CFDF /* PBXContainerItemProxy */;
+		};
+		B6D9D97627EE5F9F00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D97227EE5F9F00A9CFDF /* Capo Watch Extension */;
+			targetProxy = B6D9D97527EE5F9F00A9CFDF /* PBXContainerItemProxy */;
+		};
+		B6D9D98F27EE5F9F00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D97227EE5F9F00A9CFDF /* Capo Watch Extension */;
+			targetProxy = B6D9D98E27EE5F9F00A9CFDF /* PBXContainerItemProxy */;
+		};
+		B6D9D99927EE5F9F00A9CFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D9D96727EE5F9E00A9CFDF /* Capo Watch */;
+			targetProxy = B6D9D99827EE5F9F00A9CFDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6D9D99F27EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6D9D9A027EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B6D9D9A227EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capo Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capo Watch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Capo;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Capo_Watch_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B6D9D9A327EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capo Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capo Watch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Capo;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Capo_Watch_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B6D9D9A627EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Capo_Watch_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = run.capo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch;
+				PRODUCT_NAME = Capo;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B6D9D9A727EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Capo_Watch_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = run.capo;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch;
+				PRODUCT_NAME = Capo;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B6D9D9AA27EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capo/Preview Content\"";
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6D9D9AB27EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capo/Preview Content\"";
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D9D9AD27EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capo.app/Capo";
+			};
+			name = Debug;
+		};
+		B6D9D9AE27EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capo.app/Capo";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D9D9B027EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = capo;
+			};
+			name = Debug;
+		};
+		B6D9D9B127EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = capo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D9D9B327EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capo WatchKit Extension.appex/Capo WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B6D9D9B427EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capo WatchKit Extension.appex/Capo WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B6D9D9B627EE5F9F00A9CFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Capo Watch";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B6D9D9B727EE5F9F00A9CFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9NRX8EY6J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = run.capo.watch.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Capo Watch";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D9D93F27EE5F9D00A9CFDF /* Build configuration list for PBXProject "Capo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D99F27EE5F9F00A9CFDF /* Debug */,
+				B6D9D9A027EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9A127EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9A227EE5F9F00A9CFDF /* Debug */,
+				B6D9D9A327EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9A527EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9A627EE5F9F00A9CFDF /* Debug */,
+				B6D9D9A727EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9A927EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9AA27EE5F9F00A9CFDF /* Debug */,
+				B6D9D9AB27EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9AC27EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9AD27EE5F9F00A9CFDF /* Debug */,
+				B6D9D9AE27EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9AF27EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9B027EE5F9F00A9CFDF /* Debug */,
+				B6D9D9B127EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9B227EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9B327EE5F9F00A9CFDF /* Debug */,
+				B6D9D9B427EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D9D9B527EE5F9F00A9CFDF /* Build configuration list for PBXNativeTarget "Capo Watch UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D9D9B627EE5F9F00A9CFDF /* Debug */,
+				B6D9D9B727EE5F9F00A9CFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
+}
