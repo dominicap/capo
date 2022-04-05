@@ -175,6 +175,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B67E89A827FC406D00573901 /* Capo Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Capo Shared";
+			sourceTree = "<group>";
+		};
 		B6CC42C027EEAF6600B60341 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				B6D9D94627EE5F9D00A9CFDF /* Capo */,
+				B67E89A827FC406D00573901 /* Capo Shared */,
 				B6D9D95727EE5F9E00A9CFDF /* Capo Tests */,
 				B6D9D96127EE5F9E00A9CFDF /* Capo UITests */,
 				B6D9D96C27EE5F9E00A9CFDF /* Capo Watch */,
