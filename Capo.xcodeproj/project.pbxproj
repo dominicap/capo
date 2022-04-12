@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6263E9D28056ACD000A78BD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263E9C28056ACD000A78BD /* Keychain.swift */; };
+		B6263E9E28056ACD000A78BD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263E9C28056ACD000A78BD /* Keychain.swift */; };
+		B6263EA428057BCA000A78BD /* Spotify+ASWebAuthenticationPresentationContextProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263EA328057BCA000A78BD /* Spotify+ASWebAuthenticationPresentationContextProviding.swift */; };
+		B66A23B228053766004AF153 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B66A23B128053766004AF153 /* SpotifyAPI */; };
+		B66A23B52805389F004AF153 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B66A23B42805389F004AF153 /* SpotifyAPI */; };
+		B66A23B728053B33004AF153 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66A23B628053B33004AF153 /* Spotify.swift */; };
+		B66A23B82805659D004AF153 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66A23B628053B33004AF153 /* Spotify.swift */; };
 		B6D9D94827EE5F9D00A9CFDF /* CapoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */; };
 		B6D9D94A27EE5F9D00A9CFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94927EE5F9D00A9CFDF /* ContentView.swift */; };
 		B6D9D94C27EE5F9E00A9CFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */; };
@@ -100,6 +107,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6263E9C28056ACD000A78BD /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		B6263E9F280572A7000A78BD /* Capo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capo.entitlements; sourceTree = "<group>"; };
+		B6263EA0280572D4000A78BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6263EA22805759C000A78BD /* Capo Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Capo Watch Extension.entitlements"; sourceTree = "<group>"; };
+		B6263EA328057BCA000A78BD /* Spotify+ASWebAuthenticationPresentationContextProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spotify+ASWebAuthenticationPresentationContextProviding.swift"; sourceTree = "<group>"; };
+		B66A23B628053B33004AF153 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
 		B6D9D94427EE5F9D00A9CFDF /* Capo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoApp.swift; sourceTree = "<group>"; };
 		B6D9D94927EE5F9D00A9CFDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66A23B228053766004AF153 /* SpotifyAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66A23B52805389F004AF153 /* SpotifyAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,9 +190,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B66A23B32805389F004AF153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B67E89A827FC406D00573901 /* Capo Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B66A23B628053B33004AF153 /* Spotify.swift */,
+				B6263E9C28056ACD000A78BD /* Keychain.swift */,
 			);
 			path = "Capo Shared";
 			sourceTree = "<group>";
@@ -220,6 +244,7 @@
 				B6D9D99027EE5F9F00A9CFDF /* Capo Watch Tests */,
 				B6D9D99A27EE5F9F00A9CFDF /* Capo Watch UITests */,
 				B6D9D94527EE5F9D00A9CFDF /* Products */,
+				B66A23B32805389F004AF153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,8 +265,11 @@
 		B6D9D94627EE5F9D00A9CFDF /* Capo */ = {
 			isa = PBXGroup;
 			children = (
+				B6263EA0280572D4000A78BD /* Info.plist */,
+				B6263E9F280572A7000A78BD /* Capo.entitlements */,
 				B6CC42C027EEAF6600B60341 /* View */,
 				B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */,
+				B6263EA328057BCA000A78BD /* Spotify+ASWebAuthenticationPresentationContextProviding.swift */,
 				B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */,
 				B6D9D94D27EE5F9E00A9CFDF /* Preview Content */,
 			);
@@ -284,6 +312,7 @@
 		B6D9D97727EE5F9F00A9CFDF /* Capo Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6263EA22805759C000A78BD /* Capo Watch Extension.entitlements */,
 				B6CC42C227EEAF8200B60341 /* Controller */,
 				B6CC42C127EEAF7A00B60341 /* View */,
 				B6D9D97827EE5F9F00A9CFDF /* CapoApp.swift */,
@@ -338,6 +367,9 @@
 				B6D9D96B27EE5F9E00A9CFDF /* PBXTargetDependency */,
 			);
 			name = Capo;
+			packageProductDependencies = (
+				B66A23B128053766004AF153 /* SpotifyAPI */,
+			);
 			productName = capo;
 			productReference = B6D9D94427EE5F9D00A9CFDF /* Capo.app */;
 			productType = "com.apple.product-type.application";
@@ -408,6 +440,9 @@
 			dependencies = (
 			);
 			name = "Capo Watch Extension";
+			packageProductDependencies = (
+				B66A23B42805389F004AF153 /* SpotifyAPI */,
+			);
 			productName = "capo WatchKit Extension";
 			productReference = B6D9D97327EE5F9F00A9CFDF /* Capo Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -494,6 +529,9 @@
 				Base,
 			);
 			mainGroup = B6D9D93B27EE5F9D00A9CFDF;
+			packageReferences = (
+				B66A23B028053766004AF153 /* XCRemoteSwiftPackageReference "SpotifyAPI" */,
+			);
 			productRefGroup = B6D9D94527EE5F9D00A9CFDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -571,6 +609,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6263EA428057BCA000A78BD /* Spotify+ASWebAuthenticationPresentationContextProviding.swift in Sources */,
+				B66A23B728053B33004AF153 /* Spotify.swift in Sources */,
+				B6263E9D28056ACD000A78BD /* Keychain.swift in Sources */,
 				B6D9D94A27EE5F9D00A9CFDF /* ContentView.swift in Sources */,
 				B6D9D94827EE5F9D00A9CFDF /* CapoApp.swift in Sources */,
 			);
@@ -597,11 +638,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66A23B82805659D004AF153 /* Spotify.swift in Sources */,
 				B6D9D97D27EE5F9F00A9CFDF /* NotificationController.swift in Sources */,
 				B6D9D97B27EE5F9F00A9CFDF /* ContentView.swift in Sources */,
 				B6D9D98127EE5F9F00A9CFDF /* ComplicationController.swift in Sources */,
 				B6D9D97927EE5F9F00A9CFDF /* CapoApp.swift in Sources */,
 				B6D9D97F27EE5F9F00A9CFDF /* NotificationView.swift in Sources */,
+				B6263E9E28056ACD000A78BD /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +814,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Capo Watch Extension/Capo Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capo Watch Extension/Preview Content\"";
@@ -803,6 +847,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Capo Watch Extension/Capo Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capo Watch Extension/Preview Content\"";
@@ -888,12 +933,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capo/Capo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capo/Preview Content\"";
 				DEVELOPMENT_TEAM = S9NRX8EY6J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Capo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -919,12 +966,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capo/Capo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capo/Preview Content\"";
 				DEVELOPMENT_TEAM = S9NRX8EY6J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Capo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1188,6 +1237,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B66A23B028053766004AF153 /* XCRemoteSwiftPackageReference "SpotifyAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Peter-Schorn/SpotifyAPI";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B66A23B128053766004AF153 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B66A23B028053766004AF153 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+		B66A23B42805389F004AF153 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B66A23B028053766004AF153 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6D9D93C27EE5F9D00A9CFDF /* Project object */;
 }
