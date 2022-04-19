@@ -7,10 +7,14 @@
 
 import Foundation
 import Security
+import os.log
 
 struct Keychain<T: Codable> {
 
   var server: String
+  var accessGroup: String
+
+  let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Keychain")
 
   @discardableResult
   func create(_ item: T) throws -> Bool {
@@ -18,6 +22,7 @@ struct Keychain<T: Codable> {
       kSecClass as String: kSecClassInternetPassword,
       kSecAttrSynchronizable as String: true,
       kSecAttrServer as String: self.server,
+      kSecAttrAccessGroup as String: self.accessGroup,
       kSecValueData as String: try JSONEncoder().encode(item),
     ]
 
@@ -36,6 +41,7 @@ struct Keychain<T: Codable> {
       kSecClass as String: kSecClassInternetPassword,
       kSecAttrSynchronizable as String: true,
       kSecAttrServer as String: self.server,
+      kSecAttrAccessGroup as String: self.accessGroup,
     ]
 
     let data = try JSONEncoder().encode(item)
@@ -60,6 +66,7 @@ struct Keychain<T: Codable> {
       kSecClass as String: kSecClassInternetPassword,
       kSecAttrSynchronizable as String: true,
       kSecAttrServer as String: self.server,
+      kSecAttrAccessGroup as String: self.accessGroup,
       kSecReturnAttributes as String: false,
       kSecReturnData as String: true,
     ]
@@ -88,6 +95,7 @@ struct Keychain<T: Codable> {
       kSecClass as String: kSecClassInternetPassword,
       kSecAttrSynchronizable as String: true,
       kSecAttrServer as String: self.server,
+      kSecAttrAccessGroup as String: self.accessGroup,
     ]
 
     let status = SecItemDelete(query as CFDictionary)

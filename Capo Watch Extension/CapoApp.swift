@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import WatchKit
 
 @main
 struct CapoApp: App {
+
+  @StateObject var spotify = Spotify(
+    clientId: "051fa037942742438df1e85c2793f69b",
+    scopes: [
+      .userReadPlaybackState, .userModifyPlaybackState, .userReadCurrentlyPlaying,
+      .userTopRead, .playlistModifyPublic, .playlistModifyPrivate,
+    ])
+
   @SceneBuilder var body: some Scene {
     WindowGroup {
-      NavigationView {
-        ContentView()
+      if spotify.isAuthorized {
+        TabView {
+          NowPlayingView()
+        }
+      } else {
+        AuthenticationView()
       }
     }
 

@@ -8,57 +8,70 @@
 import Combine
 import Foundation
 import SpotifyWebAPI
+import WatchConnectivity
 import os.log
 
-final class Spotify: NSObject, ObservableObject {
+class Spotify: NSObject, ObservableObject, WCSessionDelegate {
 
   let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Spotify")
 
-  private static let clientID = "051fa037942742438df1e85c2793f69b"
-  private static let clientSecret = "2c7ef4b2bb144df6abf731e09875b07a"
+  let connectivity: WCSession
+
+  private let clientId: String
 
   static let callbackURLScheme = "capo"
   static let redirectURI = URL(string: "\(callbackURLScheme)://callback")!
 
+  static var state = String.randomURLSafe(length: 128)
+
   static var codeVerifier = String.randomURLSafe(length: 128)
   static var codeChallenge = String.makeCodeChallenge(codeVerifier: codeVerifier)
 
-  static var state = String.randomURLSafe(length: 128)
+  let scopes: Set<Scope>
 
-  private let keychain = Keychain<AuthorizationCodeFlowPKCEManager>(
-    server: SpotifyWebAPI.Endpoints.accountsBase)
+  let keychain = Keychain<AuthorizationCodeFlowPKCEManager>(
+    server: SpotifyWebAPI.Endpoints.accountsBase, accessGroup: "group.run.capo")
 
-  let api = SpotifyAPI(authorizationManager: AuthorizationCodeFlowPKCEManager(clientId: clientID))
+  let api: SpotifyAPI<AuthorizationCodeFlowPKCEManager>
 
   var cancellables: Set<AnyCancellable> = []
 
   @Published var isAuthorized = false
 
-  override init() {
+  init(connectivity: WCSession = .default, clientId: String, scopes: Set<Scope>) {
+    self.clientId = clientId
+    self.scopes = scopes
+
+    self.api = SpotifyAPI(
+      authorizationManager: AuthorizationCodeFlowPKCEManager(clientId: self.clientId))
+
+    self.connectivity = connectivity
+
     super.init()
 
+    self.connectivity.delegate = self
+    self.connectivity.activate()
+
     self.api.authorizationManagerDidChange
-      .receive(on: RunLoop.main)
-      .sink(receiveValue: authorizationManagerDidChange)
+      .receive(on: DispatchQueue.main)
+      .sink(receiveValue: self.authorizationManagerDidChange)
       .store(in: &cancellables)
 
     self.api.authorizationManagerDidDeauthorize
-      .receive(on: RunLoop.main)
-      .sink(receiveValue: authorizationManagerDidDeauthorize)
+      .receive(on: DispatchQueue.main)
+      .sink(receiveValue: self.authorizationManagerDidDeauthorize)
       .store(in: &cancellables)
 
     do {
       if let authorizationManager = try keychain.retrieve() {
         self.api.authorizationManager = authorizationManager
-        self.isAuthorized = true
-        print("foo")
       }
     } catch {
       logger.log("Could not find Spotify Authorization Manager in Keychain.")
     }
   }
 
-  func authorizationManagerDidChange() {
+  private func authorizationManagerDidChange() {
     self.isAuthorized = self.api.authorizationManager.isAuthorized()
 
     do {
@@ -66,14 +79,76 @@ final class Spotify: NSObject, ObservableObject {
     } catch {
       logger.log("Could not store Spotify Authorization Manager into Keychain.")
     }
+
+    #if os(iOS)
+      do {
+        let data = try JSONEncoder().encode(self.api.authorizationManager)
+        let applicationContext =
+          ["AuthorizationManagerDidChange": true, "Data": data] as [String: Any]
+        self.sendApplicationContext(applicationContext)
+      } catch {
+        logger.log("Could not encode Spotify Authorization Manager.")
+      }
+    #endif
   }
 
-  func authorizationManagerDidDeauthorize() {
+  private func authorizationManagerDidDeauthorize() {
     self.isAuthorized = false
 
     if !keychain.remove() {
       logger.log("Could not remove Spotify Authorization Manager from Keychain.")
     }
+
+    #if os(iOS)
+      let applicationContext =
+        ["AuthorizationManagerDidDeauthorize": true, "Data": Data()] as [String: Any]
+      self.sendApplicationContext(applicationContext)
+    #endif
   }
+
+  func sendApplicationContext(_ applicationContext: [String: Any]) {
+    do {
+      try self.connectivity.updateApplicationContext(applicationContext)
+    } catch {
+      logger.log("Could not update Application Context to counterpart application.")
+    }
+  }
+
+  func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String: Any])
+  {
+
+    print(applicationContext)
+
+    if let status = applicationContext["AuthorizationManagerDidChange"] as? Bool, status == true {
+      guard let data = applicationContext["Data"] as? Data else {
+        return
+      }
+
+      do {
+        let authorizationManager = try JSONDecoder().decode(
+          AuthorizationCodeFlowPKCEManager.self, from: data)
+        self.api.authorizationManager = authorizationManager
+      } catch {
+        logger.log("Could not decode Spotify Authorization Manager from data.")
+      }
+    } else if let status = applicationContext["AuthorizationManagerDidDeauthorize"] as? Bool,
+      status == true
+    {
+      self.api.authorizationManager.deauthorize()
+    }
+  }
+
+  func session(
+    _ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState,
+    error: Error?
+  ) {}
+
+  #if os(iOS)
+    func sessionDidBecomeInactive(_ session: WCSession) {}
+
+    func sessionDidDeactivate(_ session: WCSession) {
+      connectivity.activate()
+    }
+  #endif
 
 }
