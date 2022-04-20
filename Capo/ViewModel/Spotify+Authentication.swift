@@ -8,12 +8,13 @@
 import AuthenticationServices
 import Foundation
 
+// MARK: - ASWebAuthenticationPresentationContextProviding
 extension Spotify: ASWebAuthenticationPresentationContextProviding {
 
   func authenticate() {
-    let authorizationURL = self.api.authorizationManager.makeAuthorizationURL(
+    let authorizationURL = api.authorizationManager.makeAuthorizationURL(
       redirectURI: Spotify.redirectURI, codeChallenge: Spotify.codeChallenge, state: Spotify.state,
-      scopes: self.scopes)
+      scopes: scopes)
 
     guard let authorizationURL = authorizationURL else {
       return
@@ -46,12 +47,12 @@ extension Spotify: ASWebAuthenticationPresentationContextProviding {
     if authenticationSession.canStart {
       authenticationSession.start()
     } else {
-      self.logger.log("Authentication session could not start successfully.")
+      logger.log("Authentication session could not start successfully.")
     }
   }
 
   func deauthenticate() {
-    self.api.authorizationManager.deauthorize()
+    api.authorizationManager.deauthorize()
   }
 
   func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {

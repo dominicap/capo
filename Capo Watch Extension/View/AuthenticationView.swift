@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WatchKit
 
 struct AuthenticationView: View {
   var body: some View {

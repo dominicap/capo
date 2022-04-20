@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60796D3280F761C009C8A1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60796D2280F761C009C8A1C /* ContentView.swift */; };
+		B60796D6280F7AAA009C8A1C /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60796D5280F7AAA009C8A1C /* WorkoutManager.swift */; };
 		B6263E9D28056ACD000A78BD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263E9C28056ACD000A78BD /* Keychain.swift */; };
 		B6263E9E28056ACD000A78BD /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6263E9C28056ACD000A78BD /* Keychain.swift */; };
 		B66A23B228053766004AF153 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B66A23B128053766004AF153 /* SpotifyAPI */; };
 		B66A23B52805389F004AF153 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = B66A23B42805389F004AF153 /* SpotifyAPI */; };
 		B66A23B728053B33004AF153 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66A23B628053B33004AF153 /* Spotify.swift */; };
 		B66A23B82805659D004AF153 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66A23B628053B33004AF153 /* Spotify.swift */; };
+		B68E4F94280FC2C000D8D2F4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68E4F93280FC2C000D8D2F4 /* HealthKit.framework */; };
+		B68E4F96280FCDAF00D8D2F4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E4F95280FCDAE00D8D2F4 /* StartView.swift */; };
 		B6D9D94827EE5F9D00A9CFDF /* CapoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */; };
 		B6D9D94A27EE5F9D00A9CFDF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D94927EE5F9D00A9CFDF /* AuthenticationView.swift */; };
 		B6D9D94C27EE5F9E00A9CFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */; };
@@ -107,11 +111,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B60796D2280F761C009C8A1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B60796D5280F7AAA009C8A1C /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		B6263E9C28056ACD000A78BD /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		B6263E9F280572A7000A78BD /* Capo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capo.entitlements; sourceTree = "<group>"; };
 		B6263EA0280572D4000A78BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6263EA22805759C000A78BD /* Capo Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Capo Watch Extension.entitlements"; sourceTree = "<group>"; };
 		B66A23B628053B33004AF153 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		B68E4F93280FC2C000D8D2F4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		B68E4F95280FCDAE00D8D2F4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		B6D9D94427EE5F9D00A9CFDF /* Capo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapoApp.swift; sourceTree = "<group>"; };
 		B6D9D94927EE5F9D00A9CFDF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66A23B52805389F004AF153 /* SpotifyAPI in Frameworks */,
+				B68E4F94280FC2C000D8D2F4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +200,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60796D4280F7A9C009C8A1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B60796D5280F7AAA009C8A1C /* WorkoutManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B66A23B32805389F004AF153 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B68E4F93280FC2C000D8D2F4 /* HealthKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,8 +219,8 @@
 		B67E89A827FC406D00573901 /* Capo Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B66A23B628053B33004AF153 /* Spotify.swift */,
 				B6263E9C28056ACD000A78BD /* Keychain.swift */,
+				B66A23B628053B33004AF153 /* Spotify.swift */,
 			);
 			path = "Capo Shared";
 			sourceTree = "<group>";
@@ -219,7 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				B6D9D97A27EE5F9F00A9CFDF /* AuthenticationView.swift */,
+				B60796D2280F761C009C8A1C /* ContentView.swift */,
 				B6D9D97E27EE5F9F00A9CFDF /* NotificationView.swift */,
+				B68E4F95280FCDAE00D8D2F4 /* StartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,8 +247,8 @@
 		B6CC42C227EEAF8200B60341 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6D9D97C27EE5F9F00A9CFDF /* NotificationController.swift */,
 				B6D9D98027EE5F9F00A9CFDF /* ComplicationController.swift */,
+				B6D9D97C27EE5F9F00A9CFDF /* NotificationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,10 +286,10 @@
 		B6D9D94627EE5F9D00A9CFDF /* Capo */ = {
 			isa = PBXGroup;
 			children = (
-				B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */,
 				B6263E9F280572A7000A78BD /* Capo.entitlements */,
-				B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */,
 				B6263EA0280572D4000A78BD /* Info.plist */,
+				B6D9D94727EE5F9D00A9CFDF /* CapoApp.swift */,
+				B6D9D94B27EE5F9E00A9CFDF /* Assets.xcassets */,
 				B6D9D94D27EE5F9E00A9CFDF /* Preview Content */,
 				B6CC42C027EEAF6600B60341 /* View */,
 				B6FA2A0028066EE9002E3F7D /* ViewModel */,
@@ -314,14 +334,15 @@
 		B6D9D97727EE5F9F00A9CFDF /* Capo Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B6D9D98827EE5F9F00A9CFDF /* PushNotificationPayload.apns */,
 				B6263EA22805759C000A78BD /* Capo Watch Extension.entitlements */,
-				B6CC42C227EEAF8200B60341 /* Controller */,
-				B6CC42C127EEAF7A00B60341 /* View */,
+				B6D9D98727EE5F9F00A9CFDF /* Info.plist */,
 				B6D9D97827EE5F9F00A9CFDF /* CapoApp.swift */,
 				B6D9D98227EE5F9F00A9CFDF /* Assets.xcassets */,
-				B6D9D98727EE5F9F00A9CFDF /* Info.plist */,
-				B6D9D98827EE5F9F00A9CFDF /* PushNotificationPayload.apns */,
+				B6CC42C227EEAF8200B60341 /* Controller */,
 				B6D9D98427EE5F9F00A9CFDF /* Preview Content */,
+				B6CC42C127EEAF7A00B60341 /* View */,
+				B60796D4280F7A9C009C8A1C /* ViewModel */,
 			);
 			path = "Capo Watch Extension";
 			sourceTree = "<group>";
@@ -649,7 +670,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66A23B82805659D004AF153 /* Spotify.swift in Sources */,
+				B68E4F96280FCDAF00D8D2F4 /* StartView.swift in Sources */,
 				B6D9D97D27EE5F9F00A9CFDF /* NotificationController.swift in Sources */,
+				B60796D6280F7AAA009C8A1C /* WorkoutManager.swift in Sources */,
+				B60796D3280F761C009C8A1C /* ContentView.swift in Sources */,
 				B6D9D97B27EE5F9F00A9CFDF /* AuthenticationView.swift in Sources */,
 				B6D9D98127EE5F9F00A9CFDF /* ComplicationController.swift in Sources */,
 				B6D9D97927EE5F9F00A9CFDF /* CapoApp.swift in Sources */,
@@ -835,6 +859,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Capo;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = Capo_Watch_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Capo monitors your current cadence to play appropriate music.";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -868,6 +893,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Capo;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = Capo_Watch_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Capo monitors your current cadence to play appropriate music.";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

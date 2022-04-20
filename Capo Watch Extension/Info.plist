@@ -12,5 +12,17 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>workout-processing</string>
+	</array>
+	<key>NSMotionUsageDescription</key>
+	<string>Capo uses your current cadence to queue up appropriate songs.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Capo uses workout data to display past runs.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Capo saves all workouts tracked into HealthKit.</string>
 </dict>
 </plist>

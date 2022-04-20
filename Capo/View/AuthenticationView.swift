@@ -9,7 +9,6 @@ import SwiftUI
 import WatchConnectivity
 
 struct AuthenticationView: View {
-
   @EnvironmentObject var spotify: Spotify
 
   var body: some View {
